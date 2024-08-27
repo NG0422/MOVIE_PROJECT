@@ -1,0 +1,18 @@
+
+{% block body %}
+<div class="container">
+    <form method="POST" enctype="multipart/form-data">
+         {% csrf_token %}
+         <input type="text" name="name" placeholder="Enter your movie_name"><br>
+         <input type="text" name="description" placeholder="Enter your movie_description"><br>
+         <input type="datetime-local" name="releaseDate" placeholder="Enter your movie_releaseDate"><br>
+         <input type="text" name="actors" placeholder="Enter your movie_actors"><br>
+         <input type="text" name="category" placeholder="Enter your movie_category"><br>
+         <input type="text" name="reviews" placeholder="Enter your movie_reviews"><br>
+         <input type="text" name="ratings" placeholder="Enter your movie_ratings"><br>
+         <input type="text" name="youtube_url" placeholder="Give your movie_trailer_link"><br>
+         <input type="file" name="img"><br>
+         <input type="submit">
+    </form>
+</div>
+{% endblock %}
